@@ -54,9 +54,11 @@ public class SlimeController : MonoBehaviour
     private void FixedUpdate()
     {
         Collider2D coll = Physics2D.OverlapCircle(transform.position, pushRadius, pl);
+
         if (coll != null & coll.name == "Player")
         {
-            coll.GetComponent<PlayerController>().Push(transform.position);
+            coll.GetComponent<PlayerController>().TakeDmg(1);
+            //coll.GetComponent<PlayerController>().Push(transform.position);
         }
     }
     private IEnumerator CanBomb(){

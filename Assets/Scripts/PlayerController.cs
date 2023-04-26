@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    int HP=100;
     Rigidbody2D rb2d;
     [SerializeField]
     float jumpForce = 0.02f;
@@ -49,5 +51,9 @@ public class PlayerController : MonoBehaviour
     public IEnumerator CanMove(){
         yield return new WaitForSeconds(1);
         pushed=false;
+    }
+    public void TakeDmg(int _dmg){
+        HP-=_dmg;
+
     }
 }

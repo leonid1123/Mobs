@@ -655,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f33deb025610bc4ea46600100754d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 100
   jumpForce: 6
 --- !u!212 &781923074
 SpriteRenderer:
@@ -741,11 +742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7550195946535265613, guid: 39809255223388a4ca257e57041cf0d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.67
+      value: 4.15
       objectReference: {fileID: 0}
     - target: {fileID: 7550195946535265613, guid: 39809255223388a4ca257e57041cf0d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: -0.33
       objectReference: {fileID: 0}
     - target: {fileID: 7550195946535265613, guid: 39809255223388a4ca257e57041cf0d1, type: 3}
       propertyPath: m_LocalPosition.z
